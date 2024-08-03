@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/script2.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Emprestimo</title>
+</head>
+<body>
+    <header id="header-area"></header>
+    <main class="land-container">
+        <form action="" class="form-pedir">
+            <div class="form-control space">
+                <div class="top">
+                    <p>Qual o Valor do seu Empréstimo?</p>
+                    <p class="valor">1500 Kz</p>
+                </div>
+                <input type="range" id="rangeValor" min="1000" max="1000000" value="1500" step="100">
+                <div class="down">
+                    <p>1.000 Kz</p>
+                    <p>1.000.000 Kz</p>
+                </div>
+            </div>
+            <div class="form-control space">
+                <div class="top">
+                    <p>Em Quantos Meses?</p>
+                    <p class="meses">6 Meses</p>
+                </div>
+                <input type="range" id="rangeMeses" min="6" max="12" value="6" step="1" oninput="atualizarMeses(this.value)">
+                <div class="down">
+                    <p>6 Meses</p>
+                    <p>12 Meses</p>
+                </div>
+            </div>
+            <div class="form-control space">
+                <div class="top">
+                    <p>Pagamento Mensal</p>
+                    <p class="pagamento">100 kz</p>
+                </div>
+            </div>
+            <div class="form-control">
+                <button class="pedir-btn" type="button">Pedir O Meu Imprestimo</button>
+            </div>
+        </form>
+        <div class="sucess-message2">
+            <i class="bi bi-check-circle-fill"></i>
+            <p>Verifique o seu Email!<br>O emprestimo foi concedido com sucesso.</p>
+        </div>
+    </main>
+    <footer id="foooter-area"></footer>
+</body>
+</html>
